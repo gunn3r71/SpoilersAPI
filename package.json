@@ -1,0 +1,23 @@
+{
+  "name": "spoilersapi",
+  "version": "1.0.0",
+  "description": "API que faz um crud de spoiler",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunn3r71/SpoilersAPI.git"
+  },
+  "keywords": [
+    "APi",
+    "nodejs"
+  ],
+  "author": "Lucas Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunn3r71/SpoilersAPI/issues"
+  },
+  "homepage": "https://github.com/gunn3r71/SpoilersAPI#readme"
+}
