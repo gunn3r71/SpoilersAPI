@@ -1,4 +1,3 @@
-const { response } = require('express');
 const spoiler = require('../model/spoiler');
 
 exports.getById = (req,res,next) => {
