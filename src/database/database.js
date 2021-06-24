@@ -2,7 +2,7 @@ const sequelize = require('sequelize'); //Importando biblioteca ORM que será ut
 
 const env = process.env.NODE_ENV || 'dev';
 
-const config = require('./../config/config')[env];
+const config = require('../config/config')[env];
 
 const sequelize = new Sequelize(
     config.database.name,

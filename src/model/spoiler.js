@@ -1,5 +1,5 @@
 const sequelize = require('sequelize');
-const _sequelize = require('./../database/database');
+const _sequelize = require('../database/database');
 
 const spoiler = _sequelize.define(
     'spoiler', {
@@ -29,6 +29,10 @@ const spoiler = _sequelize.define(
             validate:{
                 len: [2,250]
             }
+        },
+        status: {
+            allowNull: false,
+            type: sequelize.BOOLEAN
         }
     }
 );
