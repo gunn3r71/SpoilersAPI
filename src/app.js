@@ -1,15 +1,18 @@
-const http = require('http'); //Responsável por criar o server
-const hostname = "127.0.0.1";
-const port = 3000;
+const http = require('http');
+const express = require('express');
+const app = express();
+const hostname = '127.0.0.1';
+const port = 8080;
 
-const server = http.createServer(
-    (req,res) => {
-        res.statusCode = 200;
-        res.setHeader("Content-Type", "text/plain");
-        res.end("Hey");
-    }
-);
+app.set('port',port);
+
+const server = http.createServer(app);
+
+//registrando um middleware
+app.use((req,res, next) => {
+    res.status(404).json({message:'I don\'t have that =('});
+});
 
 server.listen(port, hostname, () => {
-    console.log("Server started at http://localhost:3000");
+    console.log(`Server started at http://localhost:${port}`);
 });
